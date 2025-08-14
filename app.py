@@ -7,7 +7,7 @@ import io
 import pandas as pd
 import streamlit as st
 
-st.set_page_config(page_title="🏉 Rugby Union Tryscorers → 5 Clean Columns", layout="wide")
+st.set_page_config(page_title="🏉 Rugby Union Tryscorers", layout="wide")
 
 # ---------- Parser helpers (unchanged logic) ----------
 def _norm(text: str) -> list[str]:
