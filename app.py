@@ -67,7 +67,7 @@ def parse_bet365_tryscorers(raw: str) -> pd.DataFrame:
     return df
 
 # ---------- UI ----------
-st.title("🏉 Rugby Union Tryscorers → 5 Clean Columns")
+st.title("🏉 Rugby Union Tryscorers")
 st.caption("Go to **Bet365 → Rugby match → Players → Allow Copy** → copy everything → paste it here. Then hit **Extract** to get the 5 columns and download CSV/XLSX.")
 
 raw_text = st.text_area(
