@@ -7,7 +7,7 @@ import io
 import pandas as pd
 import streamlit as st
 
-st.set_page_config(page_title="Bet365 Tryscorers Parser", layout="wide")
+st.set_page_config(page_title="🏉 Rugby Union Tryscorers → 5 Clean Columns", layout="wide")
 
 # ---------- Parser helpers (unchanged logic) ----------
 def _norm(text: str) -> list[str]:
@@ -67,11 +67,17 @@ def parse_bet365_tryscorers(raw: str) -> pd.DataFrame:
     return df
 
 # ---------- UI ----------
-st.title("Bet365 Tryscorers → 5 Clean Columns")
-st.caption("Paste the entire Bet365 page copy → click **Extract** → copy columns or download CSV/XLSX.")
+st.title("🏉 Rugby Union Tryscorers → 5 Clean Columns")
+st.caption("Go to **Bet365 → Rugby match → Players → Allow Copy** → copy everything → paste it here. Then hit **Extract** to get the 5 columns and download CSV/XLSX.")
 
-raw_text = st.text_area("Paste Bet365 blob here", value="", height=260, placeholder="Paste the entire Bet365 page copy here…")
-extract = st.button("Extract", type="primary")
+raw_text = st.text_area(
+    "Paste here 👇",
+    value="",
+    height=260,
+    placeholder="Paste the copied Players page content…",
+)
+extract = st.button("🏉 Extract", type="primary")
+
 
 if extract:
     if not raw_text.strip():
