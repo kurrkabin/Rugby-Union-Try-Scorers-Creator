@@ -94,7 +94,7 @@ def parse_bet365_scorers(raw: str) -> pd.DataFrame:
     return df
 
 # ---------- UI ----------
-st.title("🏉🏟️ Bet365 Scorers (Rugby & AFL)")
+st.title("🏉Rugby & AFL Scorers Extractor")
 st.caption("Go to **Bet365 → match → Players/Scorers → Allow Copy** → copy everything → paste below → hit **Extract**.")
 raw_text = st.text_area("Paste here 👇", value="", height=260,
                         placeholder="Paste the copied Tryscorers / Goalscorers page content…")
