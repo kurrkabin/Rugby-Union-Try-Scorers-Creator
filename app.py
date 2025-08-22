@@ -8,7 +8,7 @@ import io
 import pandas as pd
 import streamlit as st
 
-st.set_page_config(page_title="🏉🏟️ Bet365 Scorers (Rugby & AFL)", layout="wide")
+st.set_page_config(page_title="🏉Rugby & AFL Scorers Extractor", layout="wide")
 
 # ---------- Parser helpers (unchanged logic) ----------
 _SCORER_HEADERS = ["Tryscorers", "Goalscorers", "Goal Scorers"]  # permissive
